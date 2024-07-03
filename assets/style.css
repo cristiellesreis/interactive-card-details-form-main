@@ -34,6 +34,9 @@ body{
 .campos-formulario{
     width: 60rem;
     background-color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 .cartao{
@@ -47,9 +50,104 @@ body{
     display: flex;
 }
 
+.icone-cartao{
+    position: absolute;
+    margin-left: -26rem;
+    padding-top: 1.5rem;
+}
+
+.numero-cartao-img, .nome-img, .vencimento-img, .cvc-img{
+    position: absolute;
+    font-family: var(--font);
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.numero-cartao-img{
+    margin-left: -26rem;
+    padding-top: 7.5rem;
+    font-size: 27px;
+}
+
+.nome-img{
+    margin-left: -26rem;
+    padding-top: 12rem;
+    font-size: 15px;
+}
+
+.vencimento-img{
+    margin-left: -5rem;
+    padding-top: 12rem;
+    font-size: 15px;
+}
+
 .cartao-verso{
     display: flex;
     margin-top: 5rem;
     margin-left: 5rem;
 }
+
+.cvc-img{
+    margin-left: -5rem;
+    padding-top: 7rem;
+    font-size: 15px;
+}
+
+.container-form{
+    width: 65%;
+}
+
+.container-form label{
+    font-family: var(--font);
+    font-size: 13px;
+    text-transform: uppercase;
+    color: var(--very-dark-violet);
+    font-weight: 500;
+}
+
+.container-form input{
+    height: 3rem;
+    width: 25rem;
+    border-radius: .5rem;
+    border: 1px solid var(--light-grayish-violet);
+    font-family: var(--font);
+    font-size: 18px;
+    color: var(--light-grayish-violet);
+    margin-top: .5rem;
+}
+
+
+.vencimento-cvc{
+    width: 25rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.3rem;
+}
+
+.vencimento input{
+    width: 5rem;
+    
+}
+
+.cvc input{
+    width:13rem;
+}
+
+.container-form button{
+    background-color: var(--very-dark-violet);
+    width: 25rem;
+    height: 3rem;
+    border-radius: .5rem;
+    color: white;
+    font-family: var(--font);
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
 

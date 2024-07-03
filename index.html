@@ -15,17 +15,21 @@
 
   <main>
     <section>
-      
       <div class="formulario">
         <div class="cartao">
           <div class="cartao-frente">
             <div>
               <img src="/images/bg-card-front.png" alt="">
+              <img src="/images/card-logo.svg" alt="" class="icone-cartao">
+              <span class="numero-cartao-img">0000 0000 0000 0000</span>
+              <span class="nome-img">Jane Appleseed</span>
+              <span class="vencimento-img">00/00</span>
             </div>
           </div>
           <div class="cartao-verso">
             <div>
               <img src="/images/bg-card-back.png" alt="">
+              <span class="cvc-img">000</span>
             </div>
           </div>
         </div>
@@ -33,13 +37,37 @@
           <img src="/images/bg-main-desktop.png" alt="">
         </div>
         <div class="campos-formulario">
+          <div class="container-form">
+            <form>
+              <div class="nome">
+                <label for="">Cardholder Name</label><br>
+                <input type="text" placeholder="  Jane Appleseed">
+              </div>
+              <br>
+              <div class="numero-cartao">
+                <label for="">Card Number</label><br>
+                <input type="number" placeholder="  e.g. 1234 5678 9123 0000">
+              </div>
+              <br>
+              <div class="vencimento-cvc">
+                <div class="vencimento">
+                  <label for="">Exp. Date(MM/YY)</label><br>
+                  <input type="number" placeholder="  MM">
+                  <input type="number" placeholder="  YY">
+                </div>
+                
+                <div class="cvc">
+                  <label for="">CVC</label><br>
+                  <input type="number" placeholder="  e.g. 123">
+                </div>
+              </div>
+              <br>
+              <button type="submit">Confirm</button>
+            </form>
+          </div>
         </div>
-        
-
       </div>
     </section>
-
-    
   </main>
 
   
