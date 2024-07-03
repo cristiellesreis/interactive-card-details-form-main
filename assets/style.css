@@ -1,0 +1,55 @@
+:root{
+    --active-input-border: linear-gradient(#6448fe, #600594);
+    --input-errors: hsl(0, 100%, 66%);
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-violet: hsl(270, 3%, 87%);
+    --dark-grayish-violet: hsl(279, 6%, 55%);
+    --very-dark-violet: hsl(278, 68%, 11%);
+    --font: "Space Grotesk", sans-serif;
+}
+
+*{
+    margin: 0;
+    box-sizing: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.bg-cartao{
+    display: flex;
+    justify-content: end;
+}
+
+.formulario{
+    display: flex;
+    height: 100vh;
+}
+
+.campos-formulario{
+    width: 60rem;
+    background-color: white;
+}
+
+.cartao{
+    position: absolute;
+    height: 100%;
+    align-content: center;
+    margin-left: 12rem;
+}
+
+.cartao-frente{
+    display: flex;
+}
+
+.cartao-verso{
+    display: flex;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+
