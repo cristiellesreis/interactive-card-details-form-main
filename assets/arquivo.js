@@ -61,15 +61,18 @@ function confirmar(){
         campoNumCartao.classList.add('error');
         campoObrigatorioNumCartao.innerHTML="Wrong format, numbers only";
         
-    } else{
-        campoNumCartao.classList.remove('error');
     }
 
-    if(campoNumCartao.value != ''){
-        campoObrigatorioNumCartao.innerHTML=""; 
+    if(campoNumCartao.value == ''){
+        campoNumCartao.classList.add('error');
+        campoObrigatorioNumCartao.innerHTML="Can't be blank"; 
+    } else if(regexNumeros.test(campoNumCartao.value)){
+        campoNumCartao.classList.remove('error');
+        campoObrigatorioNumCartao.innerHTML="";
     }
 
 }
+
 
 
 
