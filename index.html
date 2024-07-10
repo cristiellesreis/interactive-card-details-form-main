@@ -11,134 +11,76 @@
   <title>Frontend Mentor | Interactive card details form</title>
 </head>
 
-<body>
-
-  <main>
-    <section>
-      <div class="formulario">
-        <div class="cartao">
-          <div class="cartao-frente">
-            <div>
-              <img src="/images/bg-card-front.png" alt="">
-              <img src="/images/card-logo.svg" alt="" class="icone-cartao">
-              <span class="numero-cartao-img">0000 0000 0000 0000</span>
-              <span class="nome-img">Jane Appleseed</span>
-              <span class="vencimento-img">00/00</span>
-            </div>
-          </div>
-          <div class="cartao-verso">
-            <div>
-              <img src="/images/bg-card-back.png" alt="">
-              <span class="cvc-img">000</span>
-            </div>
-          </div>
-        </div>
-        <div class="bg-cartao">
-          <img src="/images/bg-main-desktop.png" alt="">
-        </div>
-        <div class="campos-formulario">
-          <!-- <div class="container-estado-completo">
-            <img src="/images/icon-complete.svg" alt="">
-            <h1>Thank you!</h1>
-            <p>We've added your card details</p>
-            <button>Continue</button>
-          </div> -->
-          <div class="container-form">
-            <form>
-              <div class="nome">
-                <label for="">Cardholder Name</label><br>
-                <input type="text" placeholder="Jane Appleseed">
-              </div>
-              <br>
-              <div class="numero-cartao">
-                <label for="">Card Number</label><br>
-                <input type="text" id="campoNumCartao" placeholder="e.g. 1234 5678 9123 0000" onKeyPress="return maximo(this, 16)" ><br>
-                <span class="hide" id="campoObrigatorioNumCartao"></span>
-              </div>
-              <br>
-              <div class="vencimento-cvc">
-                <div class="vencimento">
-                  <label for="">Exp. Date(MM/YY)</label><br>
-                  <input type="number" id="campoMes" placeholder="MM" onKeyPress="return maximo(this, 2)">
-                  <input type="number" id="campoAno" placeholder="YY" onKeyPress="return maximo(this, 2)"><br>
-                  <span id="campoObrigatorioVencimento" class="hide"></span>
-                </div>
-                
-                <div class="cvc">
-                  <label for="">CVC</label><br>
-                  <input type="number" id="campoCvc" placeholder="e.g. 123" onKeyPress="return maximo(this, 3)"><br>
-                  <span id="campoObrigatorioCvc" class="hide"></span>
+  <body>
+    <main>
+      <section>
+        <div class="formulario">
+          <div class="cartao">
+            <div class="cartao-frente">
+              <div>
+                <div>
+                  <div class="icone-cartao"><img src="/images/card-logo.svg" alt="" >
+                  </div>
+                  <img src="/images/bg-card-front.png" alt="">
+                  <span class="numero-cartao-img">0000 0000 0000 0000</span>
+                  <span class="nome-img">Jane Appleseed</span>
+                  <span class="vencimento-img">00/00</span>
                 </div>
               </div>
-              <br>
-              <button type="button" onclick="confirmar()">Confirm</button>
-            </form>
+            </div>
+            <div class="cartao-verso">
+              <div>
+                <img src="/images/bg-card-back.png" alt="">
+                <span class="cvc-img">000</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-cartao">
+            <img src="/images/bg-main-desktop.png" alt="">
+          </div>
+          <div class="campos-formulario">
+            <!-- <div class="container-estado-completo">
+              <img src="/images/icon-complete.svg" alt="">
+              <h1>Thank you!</h1>
+              <p>We've added your card details</p>
+              <button>Continue</button>
+            </div> -->
+            <div class="container-form">
+              <form>
+                <div class="nome">
+                  <label for="">Cardholder Name</label><br>
+                  <input type="text" placeholder="Jane Appleseed">
+                </div>
+                <br>
+                <div class="numero-cartao">
+                  <label for="">Card Number</label><br>
+                  <input type="text" id="campoNumCartao" placeholder="e.g. 1234 5678 9123 0000" onKeyPress="return maximo(this, 16)" ><br>
+                  <span class="hide" id="campoObrigatorioNumCartao"></span>
+                </div>
+                <br>
+                <div class="vencimento-cvc">
+                  <div class="vencimento">
+                    <label for="">Exp. Date(MM/YY)</label><br>
+                    <input type="number" id="campoMes" placeholder="MM" onKeyPress="return maximo(this, 2)">
+                    <input type="number" id="campoAno" placeholder="YY" onKeyPress="return maximo(this, 2)"><br>
+                    <span id="campoObrigatorioVencimento" class="hide"></span>
+                  </div>
+                  <div class="cvc">
+                    <label for="">CVC</label><br>
+                    <input type="number" id="campoCvc" placeholder="e.g. 123" onKeyPress="return maximo(this, 3)"><br>
+                    <span id="campoObrigatorioCvc" class="hide"></span>
+                  </div>
+                </div>
+                <br>
+                <button type="button" onclick="confirmar()">Confirm</button>
+              </form>
+            </div>
           </div>
         </div>
-        
-      </div>
-    </section>
+      </section>
 
-
-    <script src="/assets/arquivo.js"></script>
-
-  </main>
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- 0000 0000 0000 0000
-  Jane Appleseed
-  00/00
-
-  000
-
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  Completed state start
-
-  Thank you!
-  We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-</body>
+      <script src="/assets/arquivo.js"></script>
+      
+    </main>
+  </body>
 </html>
