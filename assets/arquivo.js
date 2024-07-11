@@ -86,6 +86,8 @@ function confirmar(){
     }
 }
 
+// Preenchem o cartao enquanto o usuario digita
+
 function preencherNomeCartao(input){
     nomeCartao.innerHTML= input.value;
 }

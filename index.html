@@ -19,9 +19,9 @@
             <div class="cartao-frente">
               <div>
                 <div>
-                  <div class="icone-cartao"><img src="/images/card-logo.svg" alt="" >
+                  <div class="icone-cartao"><img src="/images/card-logo.svg" alt="logotipo cartao" >
                   </div>
-                  <img src="/images/bg-card-front.png" alt="">
+                  <img src="/images/bg-card-front.png" alt="frente do cartao">
                   <span class="numero-cartao-img" id="numeroCartao">0000 0000 0000 0000</span>
                   <span class="nome-img" id="nomeCartao">Jane Appleseed</span>
                   <span class="vencimento-img" id="vencimentoCartao">00/00</span>
@@ -30,17 +30,17 @@
             </div>
             <div class="cartao-verso">
               <div>
-                <img src="/images/bg-card-back.png" alt="">
+                <img src="/images/bg-card-back.png" alt="verso do cartao">
                 <span class="cvc-img" id="cvcCartao">000</span>
               </div>
             </div>
           </div>
           <div class="bg-cartao">
-            <img src="/images/bg-main-desktop.png" alt="">
+            <img src="/images/bg-main-desktop.png" alt="imagem de fundo roxa">
           </div>
           <div class="campos-formulario">
             <div class="hide container-estado-completo" id="mensagemSucesso">
-              <img src="/images/icon-complete.svg" alt="">
+              <img src="/images/icon-complete.svg" alt="icone de completo">
               <h1>Thank you!</h1>
               <p>We've added your card details</p>
               <button>Continue</button>
@@ -48,25 +48,25 @@
             <div class="container-form" id="containerFormulario">
               <form>
                 <div class="nome">
-                  <label for="">Cardholder Name</label><br>
+                  <label>Cardholder Name</label><br>
                   <input id="campoNomeCartao" type="text" placeholder="e.g. Jane Appleseed" onkeyup="preencherNomeCartao(this)">
                 </div>
                 <br>
                 <div class="numero-cartao">
-                  <label for="">Card Number</label><br>
+                  <label>Card Number</label><br>
                   <input type="text" id="campoNumCartao" placeholder="e.g. 1234 5678 9123 0000" onKeyPress="return maximo(this, 16)" onkeyup="preencherNumeroCartao(this)" ><br>
                   <span class="hide" id="campoObrigatorioNumCartao"></span>
                 </div>
                 <br>
                 <div class="vencimento-cvc">
                   <div class="vencimento">
-                    <label for="">Exp. Date(MM/YY)</label><br>
+                    <label>Exp. Date(MM/YY)</label><br>
                     <input type="number" id="campoMes" placeholder="MM" onKeyPress="return maximo(this, 2)" onkeyup="preencherMesVencimentoCartao(this)">
                     <input type="number" id="campoAno" placeholder="YY" onKeyPress="return maximo(this, 2)" onkeyup="preencherAnoVencimentoCartao(this)"><br>
                     <span id="campoObrigatorioVencimento" class="hide"></span>
                   </div>
                   <div class="cvc">
-                    <label for="">CVC</label><br>
+                    <label>CVC</label><br>
                     <input type="number" id="campoCvc" placeholder="e.g. 123" onKeyPress="return maximo(this, 3)" onkeyup="preencherCvcCartao(this)"><br>
                     <span id="campoObrigatorioCvc" class="hide"></span>
                   </div>
